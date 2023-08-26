@@ -1,0 +1,165 @@
+:root {
+    --fw-light-400: 300;
+    --fw-medium-500: 500;
+    --fw-heavy-700: 900;
+    
+
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 4.5rem;
+    --size-7xl: 6rem;
+    --size-8xl: 7rem;
+    --size-9xl: 8.5rem;
+    --size-10xl: 10rem;
+
+
+    --ff-display: 'Yanone Kaffeesatz', sans-serif;
+    --ff-sans: 'Roboto', sans-serif;
+
+    --fw-light-400: 300;
+    --fw-medium-500: 500;
+    --fw-heavy-700: 900;
+}
+
+/* width */
+*::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+*::-webkit-scrollbar-track {
+    background: none; 
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: none; 
+}
+*::-webkit-scrollbar-track {
+    box-shadow: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: var(--ff-display);
+}
+
+h2 {
+    font-family: var(--ff-sans);
+    font-size: var(--size-10xl);
+    color: hsl(0, 0%, 100%, 0.5);
+}
+
+
+button {
+    font-family: var(--ff-sans);
+    font-size: var(--size-sm);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    margin: 0 1rem;
+    
+}
+
+#increment-btn {
+    background: hsla(229, 72%, 66%, 0.6);
+    border-radius: 20px 50px 20px 50px;
+}
+
+#save-btn {
+    background: hsla(4, 86%, 66%, 0.6);
+    border-radius: 20px 50px 20px 50px;
+}
+
+
+.control__container {
+    /* actual image size: 700 X 467 */
+    width: 300px;
+    height: 467px;
+    background: url(time-lapse-city-road.jpg);
+    object-fit: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: -400px 0px;
+    background-position: -325px 0px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    /* border: 1px solid yellowgreen; */
+  }
+
+  .control__entries-wrap {
+    width: 100%;
+  }
+
+  .control__heading {
+    font-size: var(--size-3xl);
+    color: hsl(0, 0%, 100%, .7);
+    height: 8rem;
+  }
+
+  .control__subhead {
+    font-family: var(--ff-sans);
+    font-size: var(--size-sm);
+    font-variant-caps: all-small-caps;
+    color: darkgrey;
+    text-align: center;
+  }
+
+  .intervals {
+    font-family: var(--ff-sans);
+    font-size: var(--size-4xl);
+    color: hsla(229, 68%, 75%, 0.5);
+    text-align: left;
+    overflow-x: scroll;
+    /* border: 1px solid yellowgreen; */
+}
+
+.intervals::-webkit-scrollbar-track{
+    background-color: none;
+}
+
+.intervals::-webkit-scrollbar{
+    height: 0.5rem;
+}
+
+.intervals::-webkit-scrollbar-thumb{
+    background-color: hsla(80, 4%, 49%, 0.5);
+    border-radius: 100vw;
+}
+
+/* .intervals::-webkit-scrollbar-thumb:hover {
+    height: 0.5rem;
+    border-radius: 100vw;
+    border-radius: 1vh;
+    background: hsla(80, 4%, 49%, 0.5);  
+} */
