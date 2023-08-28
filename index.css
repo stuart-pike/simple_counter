@@ -92,14 +92,14 @@ button {
 
 .control__container {
     /* actual image size: 700 X 467 */
-    width: 300px;
+    width: 375px;
     height: 467px;
     background: url(time-lapse-city-road.jpg);
     object-fit: none;
     background-size: cover;
     background-repeat: no-repeat;
     object-position: -400px 0px;
-    background-position: -325px 0px;
+    background-position: -300px 0px;
 
     position: absolute;
     top:0;
